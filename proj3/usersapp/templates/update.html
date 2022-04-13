@@ -1,0 +1,44 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %}Home {% endblock %}
+
+{% block body%}
+<div class="container">
+    <form action="" method="POST">
+        <table class="table">
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="name" value="{{user.name}}"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" value="{{user.email}}"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" value="{{user.password}}"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>Pune<input type="radio" name="city" value="pune"
+                        {% if user.city=="pune"%}
+                               checked
+                        {% endif %}>
+
+                    Mumbai<input type="radio" name="city" value="mumbai"
+                    {% if user.city=="mumbai"%}
+                    checked
+                    {% endif %}>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+{% endblock %}

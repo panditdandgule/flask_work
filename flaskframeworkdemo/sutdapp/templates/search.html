@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Student</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+<h3>Student Information</h3>
+<a href="/">Home</a>
+<form action="/student/search" method="get">
+    <input type="radio" name="search" value="ID" checked> Student Id
+    <input type="radio" name="search" value="NAME"> Student Name
+
+    Enter Input : <input type="text" name="inputval"> <br><br>
+    <input type="submit">
+
+    <table>
+        <thead>
+        <tr>
+            <td>Student Id</td>
+            <td>Student Name</td>
+            <td>Student Age</td>
+            <td>Student City</td>
+            <td>Actions</td>
+
+        </tr>
+        </thead>
+        <tbody>
+
+        <tr>
+            <td>{{students.sid}}</td>
+            <td>{{students.sname}}</td>
+            <td>{{students.sage}}</td>
+            <td>{{students.scity}}</td>
+            <td><a href="/student/edit/{{students.sid}}">EDIT</a>  <a href="/student/delete/{{students.sid}}">DELETE</a></td>
+        </tr>
+
+
+        </tbody>
+    </table>
+
+</form>
+
+</body>
+</html>

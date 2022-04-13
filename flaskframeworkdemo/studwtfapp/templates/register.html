@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+<h1 style="text-align:center;color:crimson;font-size:25px;">Student Registration Form</h1>
+{% for message in form.id.errors %}
+    <div>{{message}}</div>
+{% endfor %}
+
+{% for message in form.name.errors %}
+<div>{{message}}</div>
+{% endfor %}
+
+{% for message in form.city.errors %}
+<div>{{message}}</div>
+{% endfor %}
+
+<form action="/success" method="post">
+    <div class="table-section">
+        <table>
+            <tr>
+                <td>{{form.id.label}}</td>
+                <td>{{form.id}}</td>
+            </tr>
+            <tr>
+                <td>{{form.name.label}}</td>
+                <td>{{form.name}}</td>
+            </tr>
+            <tr>
+                <td>{{form.age.label}}</td>
+                <td>{{form.age}}</td>
+            </tr>
+            <tr>
+                <td>{{form.gender.label}}</td>
+                <td>{{form.gender(class="gender-options")}}</td>
+            </tr>
+            <tr>
+                <td>{{form.city.label}}</td>
+                <td>{{form.city}}</td>
+            </tr>
+            <tr>
+
+                <td>{{form.submit(class="anchor-button")}}</td>
+            </tr>
+        </table>
+    </div>
+</form>
+
+</body>
+</html>

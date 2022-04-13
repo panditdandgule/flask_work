@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Success</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+<body>
+<form action="/successformsubmission" method="post"></form>
+<h1 style="text-align: center;font-size:30px;color:blueviolet;">Welcome {{session['name']}}!! Registration completed successfully..</h1>
+<div class="header-menu-section">
+    <p><a class="anchor-button" href="{{url_for('home')}}"><strong>Home</strong></a></p>
+    <p><a class="anchor-button" href="{{url_for('login')}}"><strong>Login</strong></a></p>
+</div>
+</body>
+</html>

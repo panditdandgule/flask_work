@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Products</title>
+</head>
+<body>
+{{result}}
+<form action="/product/save" method="POST">
+    <table>
+        <tr>
+            <td>Product ID: </td>
+            <td><input type="text" name="pid" value="{{d_product.id}}"></td>
+        </tr>
+        <tr>
+            <td>Product Name: </td>
+            <td><input type="text" name="pname" value="{{d_product.name}}"></td>
+        </tr>
+        <tr>
+            <td>Product Quantity: </td>
+            <td><input type="text" name="pprc" value="{{d_product.prc}}"></td>
+        </tr>
+        <tr>
+            <td>Product Price: </td>
+            <td><input type="text" name="pqty" value="{{d_product.qty}}"></td>
+        </tr>
+        <tr>
+            <td>Product Vendor: </td>
+            <td><input type="text" name="pven" value="{{d_product.vendor}}"></td>
+        </tr>
+        <tr>
+            <td>Product Barcode: </td>
+            <td><input type="text" name="pbar" value="{{d_product.barcode}}"></td>
+        </tr>
+        <tr>
+            <br>
+        </tr>
+        <tr>
+            <td> <input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>

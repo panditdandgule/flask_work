@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+</head>
+<body>
+<p><strong>Welcome {{name}}</strong></p>
+<table style="border:blue;border-width:5px;border-style:dotted">
+    {% for key,value in dashbord.items()%}
+    <tr>
+        <th>{{key}}</th>
+        <td>{{value}}</td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{url_for('home')}}">Logout</a>
+</body>
+</html>

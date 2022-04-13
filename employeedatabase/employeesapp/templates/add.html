@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="jumbotron">
+  <h1>Do you want to add employees?</h1>
+  <form method="post">
+    {{form.hidden_tag()}}
+    <table>
+      <tr>
+      <td>{{form.name.label}}</td>
+      <td>{{form.name}}</td>
+      </tr>
+      <tr>
+        <td>{{form.age.label}}</td>
+        <td>{{form.age}}</td>
+      </tr>
+      <tr>
+
+        <td>{{form.submit()}}</td>
+      </tr>
+    </table>
+  </form>
+</div>
+{% endblock content %}

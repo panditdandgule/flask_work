@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee</title>
+
+</head>
+<body>
+{{result}}
+<form action="/employee/add" method="POST">
+    <table>
+
+        <tr>
+            <td>Employee ID:</td>
+            <td><input type="text" name="eid" value="{{employee.eid}}"></td>
+        </tr>
+        <tr>
+            <td>Employee Name:</td>
+            <td><input type="text" name="ename" value="{{employee.ename}}"></td>
+        </tr>
+        <tr>
+            <td>Employee Salary:</td>
+            <td><input type="text" name="esalary" value="{{employee.esalary}}"></td>
+        </tr>
+        <tr>
+            <td>Employee Age:</td>
+            <td><input type="text" name="eage" value="{{employee.eage}}"></td>
+        </tr>
+        <tr>
+            <td>Employee City:</td>
+            <td><input type="text" name="ecity" value="{{employee.ecity}}"></td>
+        </tr>
+        <tr>
+
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+    </table>
+
+</form>
+
+</body>
+</html>

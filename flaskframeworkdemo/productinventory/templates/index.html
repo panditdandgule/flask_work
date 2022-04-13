@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product CRUD OPERATION</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<H1>PRODUCT INVENTORY CRUD OPRATION</H1>
+<a href="/">HOME</a><br><br>
+<a HREF="/product/save">Add Product</a><br><br>
+<a href="/product/search">Search Product</a><br><br>
+<a href="/product/display">Display Product</a><br><br>
+<a href="/product/edit">Update Product</a><br><br>
+<a href="/product/delete">Delete Product</a><br><br>
+
+{% if flag %}
+
+<br><br><br>
+<form action="/product/search" method="post">
+    <input type="radio" name="search" value="ID" checked> Product Id
+    <input type="radio" name="search" value="NAME"> Product Name
+    <input type="radio" name="search" value="VENDOR"> Product Vendor<br><br>
+    Enter Input : <input type="text" name="inputval"> <br><br>
+    <input type="submit">
+
+
+</form>
+
+<br>
+<table>
+
+    <thead>
+    <tr>
+        <td>Product ID</td>
+        <td>Product Name</td>
+        <td>Product Quantity</td>
+        <td>Product Price</td>
+        <td>Product Vendor</td>
+        <td>Product Barcode</td>
+        <td>ACTION</td>
+    </tr>
+    </thead>
+    <tbody>
+
+    <tr>
+        <td>{{products.id}}
+        <td>{{products.name}}</td>
+        <td>{{products.qty}}</td>
+        <td>{{products.prc}}</td>
+        <td>{{products.ven}}</td>
+        <td>{{products.barcode}}</td>
+        <td><a href="/product/edit/{{products.id}}">EDIT</a> | <a href="/product/delete/{{products.id}}">DELETE</a> </td>
+    </tr>
+
+
+    </tbody>
+</table>
+{% endif %}
+
+</body>
+</html>

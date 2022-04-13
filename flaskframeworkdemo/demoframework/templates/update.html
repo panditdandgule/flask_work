@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Product</title>
+</head>
+<body>
+<h3>Update Product</h3>
+<br>
+<form action="/save" method="post">
+    <table>
+        <thead ><center> <strong>Update Products</strong></center></thead>
+        <center>
+            <tr>
+                <td>Product ID: </td>
+                <td><input type="text" name="productid" value="{{product.id}}"></td>
+            </tr>
+            <tr>
+                <td>Product Name: </td>
+                <td><input type="text" name="productname" value="{{product.name}}"></td>
+            </tr>
+            <tr>
+                <td>Product Quantity: </td>
+                <td><input type="text" name="productquantity" value="{{product.qty}}"></td>
+            </tr>
+            <tr>
+                <td>Product Price: </td>
+                <td><input type="text" name="productprice" value="{{product.prc}}"> </td>
+            </tr>
+            <tr>
+                <td>Product Vendor: </td>
+                <td><input type="text" name="productvendor" value="{{product.ven}}"> </td>
+            </tr>
+            <tr>
+                <td>Product Barcode: </td>
+                <td><input type="text" name="productbarcode" value="{{product.barcode}}"> </td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </center>
+    </table>
+</form>
+</body>
+</html>

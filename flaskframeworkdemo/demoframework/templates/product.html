@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Information</title>
+</head>
+<body>
+{{results}}
+<br>
+<form action="/save" method="post">
+    <table>
+       <thead ><center> <strong>Add Products</strong></center></thead>
+        <center>
+    <tr>
+        <td>Product ID: </td>
+        <td><input type="text" name="productid" value=""></td>
+    </tr>
+    <tr>
+        <td>Product Name: </td>
+        <td><input type="text" name="productname" value=""></td>
+    </tr>
+        <tr>
+            <td>Product Quantity: </td>
+            <td><input type="text" name="productquantity" value=""></td>
+        </tr>
+        <tr>
+            <td>Product Price: </td>
+            <td><input type="text" name="productprice" value=""> </td>
+        </tr>
+        <tr>
+            <td>Product Vendor: </td>
+            <td><input type="text" name="productvendor" value=""> </td>
+        </tr>
+        <tr>
+            <td>Product Barcode: </td>
+            <td><input type="text" name="productbarcode" value=""> </td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+        </center>
+    </table>
+</form>
+</body>
+</html>

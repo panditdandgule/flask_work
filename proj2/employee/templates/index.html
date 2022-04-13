@@ -1,0 +1,47 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+{% block title %}Display Employee {% endblock %}
+
+{% block body %}
+<div class="container">
+    <div>
+        <div class="col-md-12 text-center"><h1>Employee List</h1></div>
+    </div>
+    <div>
+        <table class="table">
+            <thead style="background-color:brown;color:aliceblue;">
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Gender</th>
+            <th>Country</th>
+            </thead>
+            {% for emp in employee%}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{emp.firstname}}</td>
+                <td>{{emp.lastname}}</td>
+                <td>{{emp.email}}</td>
+                <td>{{emp.password}}</td>
+                <td>{{emp.gender}}</td>
+                <td>{{emp.country}}</td>
+                <td>
+                     <span style="font-size: 24px;color:green;">
+                            <a href="/{{emp.id}}/edit"><i class="fas fa-edit"></i></a>
+                        </span>
+                    <span style="font-size: 24px;color:red;">
+                            <a href="/{{emp.id}}/delete">
+                                <i class="fas fa-trash-alt"></i></a>
+                        </span>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</div>
+
+{% endblock %}

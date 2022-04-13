@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Products</title>
+</head>
+<body>
+<h3> Display All Products</h3>
+<form action="/display" method="GET">
+    <table border="2">
+        <center>
+            <thead>
+            <center>
+                <th>Product ID</th>
+                <th>Product Name</th>
+                <th>Product Quantity</th>
+                <th>Product Price</th>
+                <th>Product Vendor</th>
+                <th>Product Barcode</th>
+                <th>Product Update</th>
+            </center>
+            </thead>
+
+            {% for product in products%}
+            <tr>
+                <td>{{product.id}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.qty}}</td>
+                <td>{{product.prc}}</td>
+                <td>{{product.ven}}</td>
+                <td>{{product.barcode}}</td>
+                <td>
+                     <span>
+                            <a href="/{{product.id}}/update"><i class="fas fa-edit"></i></a>
+                        </span>
+                    <span >
+                            <a href="/{{product.id}}/delete">
+                                <i class="fas fa-edit"> </i></a>
+                        </span>
+                </td>
+            </tr>
+            {% endfor %}
+        </center>
+    </table>
+</form>
+</body>
+</html>

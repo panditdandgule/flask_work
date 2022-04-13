@@ -1,0 +1,51 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+
+{% block title %}Add Students{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div>
+        <div class="col-md-12 text-center"><h1>Students List</h1></div>
+    </div>
+    <div>
+        <table class="table">
+            <thead style="background-color:brown;color:aliceblue;">
+            <th>ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Email</th>
+            <th>Hobbies</th>
+            <th>Country</th>
+            <th>Actions</th>
+            </thead>
+                {% for student in students %}
+                <tr>
+                    <td>{{student.id}}</td>
+                    <td>{{student.firstname}}</td>
+                    <td>{{student.lastname}}</td>
+                    <td>{{student.age}}</td>
+                    <td>{{student.gender}}</td>
+                    <td>{{student.email}}</td>
+                    <td>{{student.hobbies}}</td>
+                    <td>{{student.country}}</td>
+                    <td>
+                        <span style="font-size: 24px;color:green;">
+                            <a href="/edit/{{student.id}}"><i class="fas fa-edit"></i></a>
+                        </span>
+                        <span style="font-size: 24px;color:red;">
+                            <a href="/delete/{{student.id}}">
+                                <i class="fas fa-trash-alt"></i></a>
+                        </span>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</div>
+
+
+{% endblock %}

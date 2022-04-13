@@ -1,0 +1,38 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title %}Add Users{% endblock %}
+
+{% block body%}
+<div class="container">
+    <form method="post" action="">
+        <table class="table">
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="name" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" class="form-control"></td>
+            </tr>
+            <tr>
+                <td>City:</td>
+                <td>Pune<input type="radio" name="city" value="pune">
+                    Mumbai<input type="radio" name="city" value="mumbai">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+
+{% endblock %}

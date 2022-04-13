@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display All Employees</title>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<h3>All Employees Information</h3>
+<form action="/employee/display" method="GET">
+    <table>
+        <thead>
+        <tr>
+            <td>Employee ID</td>
+            <th>Employee Name</th>
+            <th>Employee Salary</th>
+            <th>Employee Age</th>
+            <th>Employee City</th>
+            <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for emp in employees%}
+        <tr>
+            <td>{{emp.eid}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.esalary}}</td>
+            <td>{{emp.eage}}</td>
+            <td>{{emp.ecity}}</td>
+            <td><a href="/employee/edit/{{emp.eid}}">EDIT</a> <a href="/employee/delete/{{emp.eid}}">DELETE</a> </td>
+        </tr>
+
+
+        {% endfor %}
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

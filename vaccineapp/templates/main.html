@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block title%} Welcome to Easy Vaccine {% endblock title %}
+{% block head%}
+    {{super()}}
+{% endblock head %}
+
+{% block content%}
+<h1>Welcome to Easy Vaccine</h1>
+<p>Register to Login Here</p>
+<form action="/patients" method="post">
+    <table>
+        <tr>
+            <td>Name :</td><td><input name="name" type="text"></td>
+        </tr>
+        <tr>
+            <td>Email Address :</td><td><input name="name" type="email"></td>
+        </tr>
+        <tr>
+            <td>ID Number</td><td><input name="id" type="text"></td>
+        </tr>
+        <tr>
+        <td>Password</td><td><input name="password" type="password"></td>
+        </tr>
+        <tr>
+            <td><input  type="submit" value="Submit"></td>
+        </tr>
+
+    </table>
+</form>
+<form>
+    <table>
+        <tr>
+            <td>Email Address :</td><td><input name="name" type="email"></td>
+        </tr>
+        <tr>
+            <td>Password :</td><td><input name="password" type="password"></td>
+        </tr>
+        <tr>
+            <td><input  type="submit" value="Submit"></td>
+        </tr>
+    </table>
+</form>
+{% endblock content %}

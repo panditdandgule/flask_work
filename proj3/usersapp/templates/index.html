@@ -1,0 +1,39 @@
+{% extends 'master.html' %}
+{% include 'header.html' %}
+
+{% block title%}Useres List {% endblock %}
+
+{% block body %}
+<div class="container">
+    <form action="" method="GET">
+        <table class="table">
+            <thead style="background-color:brown;color:aliceblue;">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>City</th>
+            </thead>
+            {% for user in users %}
+            <tr>
+                <td>{{loop.index}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.password}}</td>
+                <td>{{user.city}}</td>
+                <td>
+                <span style="font-size: 24px;color:green;">
+                            <a href="/{{user.id}}/edit"><i class="fas fa-edit"></i></a>
+                        </span>
+                <span style="font-size: 24px;color:red;">
+                            <a href="/{{user.id}}/delete">
+                                <i class="fas fa-trash-alt"></i></a>
+                        </span>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </form>
+</div>
+
+{% endblock %}

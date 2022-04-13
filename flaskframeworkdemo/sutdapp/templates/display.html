@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Students</title>
+    <style>
+    table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    }
+
+    td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    }
+
+    tr:nth-child(even) {
+    background-color: #dddddd;
+    }
+    </style>
+</head>
+<body>
+<h3>All Students Information</h3>
+<a href="/">Home</a>
+<form action="/student/display" method="get">
+    <table>
+        <thead>
+        <tr>
+            <td>Student Id</td>
+            <td>Student Name</td>
+            <td>Student Age</td>
+            <td>Student City</td>
+            <td>Actions</td>
+
+        </tr>
+        </thead>
+        <tbody>
+        {% for stud in students %}
+        <tr>
+            <td>{{stud.sid}}</td>
+            <td>{{stud.sname}}</td>
+            <td>{{stud.sage}}</td>
+            <td>{{stud.scity}}</td>
+            <td><a href="/student/edit/{{stud.sid}}">EDIT</a>  <a href="/student/delete/{{stud.sid}}">DELETE</a></td>
+        </tr>
+
+        {% endfor %}
+        </tbody>
+    </table>
+
+</form>
+
+</body>
+</html>

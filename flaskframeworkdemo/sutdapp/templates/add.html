@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Student</title>
+</head>
+<body>
+<h3> Add Student Information</h3><br>
+<br>
+<a href="/">Home</a>
+<br><br>
+<form action="/student/add" method="post">
+  <table>
+    <tr>
+      <td>Student Id: </td>
+      <td><input type="text" name="sid" value="{{students.sid}}"></td>
+    </tr>
+      <tr>
+          <td>Student Name: </td>
+          <td><input type="text" name="sname" value="{{students.sname}}"></td>
+      </tr>
+      <tr>
+          <td>Student Age: </td>
+          <td><input type="text" name="sage" value="{{students.sage}}"></td>
+      </tr>
+      <tr>
+          <td>Student City: </td>
+          <td><input type="text" name="scity" value="{{students.scity}}"></td>
+      </tr>
+      <tr>
+
+          <td><input type="submit" value="Submit"></td>
+      </tr>
+  </table>
+{{result}}
+</form>
+
+</body>
+</html>
