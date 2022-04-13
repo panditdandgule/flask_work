@@ -5,7 +5,7 @@ class Student(db.Model):
     __tablename__='students'
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String(100))
-    father=db.relationship('Father',backref='student',uselist=False)
+    father=db.relationship('Father',backref='student',uselist=False,lazy=False)
 
     def __init__(self,name):
         self.name=name
@@ -20,7 +20,8 @@ class Father(db.Model):
     __tablename__='fathers'
     id=db.Column(db.Integer,primary_key=True)
     name=db.Column(db.String(100))
-    student_id=db.Column(db.Integer,db.ForeignKey('students.id'))
+    student_id=db.Column(db.Integer,db.ForeignKey('students.id'),unique=True)
+    #student(backref)
 
 
     def __init__(self,name,student_id):

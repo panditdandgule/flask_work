@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="42b32fa3-684b-4e05-be35-874f0acfd072" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../employeedb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/crud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/dbconnection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/delete_record.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../employeedb/templates/view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/login1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login1/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/login2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../login2/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/login.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../loginoutexample/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/loginex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout1/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/logex.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../logout2/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/auth.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/templates/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../pushupblog/templates/signup.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/dbconnection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/profile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../simpledb/templates/success.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../employee/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../employee/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskrestapi/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskrestapi/app.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../flaskrestapi/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../students/templates/delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../students/templates/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../students/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../students/templates/master.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../students/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../demo/__init__.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="26g9wQz0ah24RAL4KOOTEnsCK7l" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../project" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Scoopons\flask_work\student\users\templates" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.app (1)">
+    <configuration name="app (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="users" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/project" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/project/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="users" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.app (1)" />
+        <item itemvalue="Python.app" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="42b32fa3-684b-4e05-be35-874f0acfd072" name="Changes" comment="" />
+      <created>1647834600525</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1647834600525</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
